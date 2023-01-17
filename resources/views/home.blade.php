@@ -25,7 +25,7 @@
         @endforeach
 
         {{-- @foreach ($trains as $items)
-            @if($items->in_time){
+            @if($items->in_time == 1)
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h4 class="card-title">{{ $items->company }}</h4>
@@ -36,7 +36,7 @@
                         <p class="card-text">Codice treno: {{ $items->train_code}}</p>
                     </div>
                 </div>
-            }
+            @endif
         @endforeach --}}
     </div>
 </body>
